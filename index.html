@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<style>
+    .btn-group{
+      margin-right: 40px;
+      margin-left: 20px;
+    }
+    .navbar-brand{
+      margin-left:20px;
+    }
+   img{
+    width:340px;
+    margin: 3px;
+    border-radius: 10px;
+    
+   }
+   .cardmb-3{
+    width: 400px;
+    height: 400px;
+    }
+    .Insta{
+      margin-left: 25px;
+    }
+    .fecha{
+     margin-left: auto;
+    }
+   
+  </style>
+  </head>
+	<body>
+      <div> <!--Barra de navegacion y botones-->
+            <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container">
+                <div class="Insta">   
+                <a class="navbar-brand" href="#"><i class="fas fa-camera-retro"></i> Instagram</a>
+                </div>
+                <div class="d-flex justify-content-end">  
+                   <div class="Boton"><!--Boton -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="background-color: green;">Create New Post</button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><!--Mensaje de publicacion-->
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header"><!--Encabezado mensaje-->
+                              <h5 class="modal-title" id="exampleModalLabel"><b>Create New Post</b></h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div><!--Fin de encabezado-->
+                            <div class="modal-body"><!--Cuerpo Mensaje-->
+                              <form>
+                                 <div class="mb-3">
+                                  <label for="message-text" class="col-form-label">Caption: </label>
+                                  <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here..."></textarea>
+                                </div>
+                              </form>
+                                <div>
+                                  <button type="button" class="btn btn-light"><i class="fas fa-camera"></i></button>
+                                  <button type="button" class="btn btn-light"><i class="fas fa-map-marker-alt"></i></button>
+                                </div>
+                              
+                            </div><!--Fin del cuerpo-->
+                            <div class="modal-footer"><!--Pie del mensaje-->
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" style="background-color: green;">Publish</button>
+                            </div><!--Fin del pie-->
+                          </div>
+                        </div>
+                      </div><!--Fin del mensaje-->
+                    </div><!--Fin del bonton-->
+                    <div class="btn-group"><!--Boton desplegable-->
+                       <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>  
+              </div>
+            </nav>
+      </div><!--Fin barra de navegacion y botones-->
+           <div><!--Pagina plegable-->
+              <div class="d-flex justify-content-center"><!--Botones Pagina Plegable-->
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <div>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true" ><i class="fas fa-th"></i></button>
+                      </li>
+                    </div>
+                    <div>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fas fa-square"></i></button>
+                      </li>
+                    </div>
+                  </ul>
+              </div>  
+                  <div class="tab-content" id="myTabContent" class="d-flex justify-content-center"><!--Contenido de paginas-->
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><!--Pagina 1-->
+                      <div class="d-flex justify-content-center">
+                          <img src="Imagenes/perro.png" class="img-thumbnail">
+                          <img src="Imagenes/gente.png" class="img-thumbnail">
+                          <img src="Imagenes/retrato.png" class="img-thumbnail">
+                      </div>
+                      <div class="d-flex justify-content-center">
+                          <img src="Imagenes/mujer.png" class="img-thumbnail">
+                          <img src="Imagenes/torre.png" class="img-thumbnail">
+                          <img src="Imagenes/realSociedad.png" class="img-thumbnail">
+                      </div>
+                      <div class="d-flex justify-content-center">
+                          <img src="Imagenes/familia.png" class="img-thumbnail">
+                          <img src="Imagenes/programacion.png" class="img-thumbnail">
+                          <img src="Imagenes/alumnosRiendo.png" class="img-thumbnail">
+                      </div>  
+                    </div><!--Fin codigo pagina1-->
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><!--Pagina 2-->
+                      <div class="row row-cols-1 row-cols-md-1 g-4" style="margin-left: 350px;">
+                        <div class="col"><!--Columna-->
+                          <div class="card mb-3"style="height: auto; width:600px; margin-left:center;"><!--Primera Tarjeta-->
+                            <div class="card-header d-flex">
+                              <h4 class="titulo">Mi loco perro!</h4>
+                              <h6 class="fecha">10/09</h6>
+                            </div>  
+                            <img src="Imagenes/perro.png" class="card-img-top" style="width: auto; margin-left: center;">
+                            <div class="card-body">
+                                 <h6 class="card-title"><b>970 Likes</b></h6>
+                                      <p class="card-text">El malamute de Alaska o alaskan malamute es un perro originario de la zona ártica, una de las razas más antiguas dentro de los perros de trineo.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card mb-3"style="height: auto; width:600px; margin-left:center;"><!--Segunda Tarjeta-->
+                              <div class="card-header d-flex">
+                                <h4>La Sociedad Humana</h4>
+                                <h6 class="fecha">10/09</h6>
+                              </div>  
+                              <img src="Imagenes/gente.png" class="card-img-top" style="width: auto; margin-left: center;">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><b>430 Likes</b></h6>
+                                        <p class="card-text">El término sociedad (del latín societas) alude a un concepto polisémico que designa a un tipo particular de agrupación de individuos que se produce tanto entre los humanos (sociedad humana o sociedades humanas, en plural) como entre algunos animales (sociedades animales).</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 20 mins ago</small></p>
+                                  </div>
+                            </div>
+                            <div class="card mb-3"style="height: auto; width:600px; margin-left:center;"><!--Tercera Tarjeta-->
+                              <div class="card-header d-flex">
+                                <h4>Una Buena Fotografía</h4>
+                                <h6 class="fecha">10/09</h6>
+                              </div>  
+                              <img src="Imagenes/retrato.png" class="card-img-top" style="width: auto; margin-left: center;">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><b>630 Likes</b></h6>
+                                        <p class="card-text">La fotografía (de foto- y -grafía) es el arte y la técnica de obtener imágenes duraderas debido a la acción de la luz.​ Es el proceso de proyectar imágenes, capturarlas y plasmarlas bien por medio del fijado en un medio sensible a la luz o por la conversión en señales electrónicas.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 50 mins ago</small></p>
+                                  </div>
+                            </div>
+                            <div class="card mb-3"style="height: auto; width:600px; margin-left:center;"><!--Cuarta Tarjeta-->
+                              <div class="card-header d-flex">
+                                <h4>Belleza!</h4>
+                                <h6 class="fecha">10/09</h6>
+                              </div>  
+                              <img src="Imagenes/mujer.png" class="card-img-top" style="width: auto; margin-left: center;">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><b>690 Likes</b></h6>
+                                        <p class="card-text">La percepción de la «belleza» a menudo implica la interpretación de alguna entidad que está en equilibrio y armonía con la naturaleza.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 1 hour ago</small></p>
+                                  </div>
+                              </div>
+                              <div class="card mb-3"style="height: auto; width:600px; margin-left:center;"><!--Quinta Tarjeta-->
+                                <div class="card-header d-flex">
+                                  <h4>Un poco de Amor Francés</h4>
+                                  <h6 class="fecha">10/09</h6>
+                                </div>  
+                                <img src="Imagenes/torre.png" class="card-img-top" style="width: auto; margin-left: center;">
+                                    <div class="card-body">
+                                      <h6 class="card-title"><b>700 Likes</b></h6>
+                                          <p class="card-text">La Torre Eiffel(Tour Eiffel, en francés), inicialmente llamada Tour de 300 mètres (Torre de 300 metros) es una estructura de hierro pudelado diseñada inicialmente por los ingenieros civiles Maurice Koechlin y Émile Nouguier y construida, tras el rediseño estético de Stephen Sauvestre, por el ingeniero civil francés Gustave Eiffel y sus colaboradores para la Exposición Universal de 1889 en París.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 hours ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card mb-3"style="height: auto; width:600px; margin-left:center;"><!--Sexta Tarjeta-->
+                                  <div class="card-header d-flex">
+                                    <h4>Real Sociedad</h4>
+                                    <h6 class="fecha">10/09</h6>
+                                  </div>  
+                                  <img src="Imagenes/realSociedad.png" class="card-img-top" style="width: auto; margin-left: center;">
+                                      <div class="card-body">
+                                        <h6 class="card-title"><b>800 Likes</b></h6>
+                                            <p class="card-text">La Real Sociedad de Fútbol, más conocido como la Real Sociedad o simplemente la Real, es un club de fútbol español con sede en San Sebastián, Guipúzcoa.</p>
+                                                <p class="card-text"><small class="text-muted">Last updated 5 hours ago</small></p>
+                                      </div>
+                                  </div>
+                                  <div class="card mb-3"style="height: auto; width:600px; margin-left:center;"><!--Septima Tarjeta-->
+                                    <div class="card-header d-flex">
+                                      <h4>La Familia es lo Primero</h4>
+                                      <h6 class="fecha">10/09</h6>
+                                    </div>  
+                                    <img src="Imagenes/familia.png" class="card-img-top" style="width: auto; margin-left: center;">
+                                        <div class="card-body">
+                                          <h6 class="card-title"><b>750 Likes</b></h6>
+                                              <p class="card-text">La familia está constituida por los parientes, es decir, aquellas personas que por cuestiones de consanguinidad, afinidad, adopción u otras razones diversas, hayan sido acogidas como miembros de esa colectividad.</p>
+                                                  <p class="card-text"><small class="text-muted">Last updated 7 hours ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3"style="height: auto; width:600px; margin-left:center;"><!--Octava Tarjeta-->
+                                      <div class="card-header d-flex">
+                                        <h4>Progra-Mando</h4>
+                                        <h6 class="fecha">10/09</h6>
+                                      </div>  
+                                      <img src="Imagenes/programacion.png" class="card-img-top" style="width: auto; margin-left: center;">
+                                          <div class="card-body">
+                                            <h6 class="card-title"><b>460 Likes</b></h6>
+                                                <p class="card-text">La programación es el proceso de crear un conjunto de instrucciones que le dicen a una computadora como realizar algún tipo de tarea.</p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 9 hours ago</small></p>
+                                          </div>
+                                      </div>
+                                      <div class="card mb-3"style="height: auto; width:600px; margin-left:center;"><!--Novena Tarjeta-->
+                                        <div class="card-header d-flex">
+                                          <h4>Mucha Risa!</h4>
+                                          <h6 class="fecha">09/09</h6>
+                                        </div>  
+                                        <img src="Imagenes/alumnosRiendo.png" class="card-img-top" style="width: auto; margin-left: center;">
+                                            <div class="card-body">
+                                              <h6 class="card-title"><b>340 Likes</b></h6>
+                                                  <p class="card-text">La risa es una respuesta biológica producida por el organismo como respuesta a determinados estímulos.</p>
+                                                      <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+                                            </div>
+                                        </div>
+                        </div><!--Fin de columna-->
+                      </div>
+                    </div><!--Fin codigo pagina2-->
+                  </div><!--Fin del contenido de paginas-->
+            </div><!--Fin de paginas plegables-->
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	</body>
+</html>
